@@ -11,8 +11,10 @@ namespace Bookstore_App.Models
 
         public string? Genre { get; set; }
 
+        [Display(Name = "Number of Players")]
         public string? NoPlayers { get; set; }
 
+        [Display(Name = "Minimum Age Recommended")]
         public int MinAge { get; set; }
 
         [Column(TypeName = "decimal(18, 2)")]
