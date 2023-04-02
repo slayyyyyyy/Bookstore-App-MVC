@@ -15,5 +15,9 @@ namespace Bookstore_App.Data
         }
 
         public DbSet<Bookstore_App.Models.Book> Book { get; set; } = default!;
+
+        public DbSet<Bookstore_App.Models.Album> Album { get; set; } = default!;
+
+        public DbSet<Bookstore_App.Models.BoardGames> BoardGames { get; set; } = default!;
     }
 }

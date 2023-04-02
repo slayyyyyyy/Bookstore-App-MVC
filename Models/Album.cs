@@ -1,14 +1,14 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Bookstore_App.Models
 {
-    public class Book
-    {  
+    public class Album
+    {
         public int Id { get; set; }
         public string? Title { get; set; }
-        public string? Author { get; set; }
+        public string? Artist { get; set; }
 
         [Display(Name = "Release Date")]
         [DataType(DataType.Date)]

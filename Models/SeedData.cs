@@ -15,10 +15,10 @@ public static class SeedData
             serviceProvider.GetRequiredService<
                 DbContextOptions<Bookstore_AppContext>>()))
         {
-            // Look for any movies.
+            
             if (context.Book.Any())
             {
-                return;   // DB has been seeded
+                return;   
             }
             context.Book.AddRange(
                 new Book
